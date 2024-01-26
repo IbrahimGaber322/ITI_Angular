@@ -1,0 +1,15 @@
+<mat-card class="my-card">
+    <mat-card-header>
+      <div mat-card-avatar class="my-header-image" [style.background-image]="'url('+ user.image+')'"></div>
+      <mat-card-title>{{user.firstName + " " + user.lastName}}</mat-card-title>
+      <mat-card-subtitle>{{user.email}}</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image [src]="user.image" [alt]="'photo of {{user.firstName}}'">
+    <mat-card-content>
+      <p class="my-username">
+       {{"@" + user.username}}
+      </p>
+    </mat-card-content>
+ 
+  </mat-card>
+  

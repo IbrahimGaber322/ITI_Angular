@@ -1,0 +1,12 @@
+
+<div class="my-users-container">
+    <mat-form-field color="primary" class="my-search">
+        <mat-label>Search . . .</mat-label>
+        <input (keyup)="handleKeyUp()" [(ngModel)]="input" type="text" matInput
+            placeholder="Search . . .">
+        <mat-icon matSuffix>search</mat-icon>
+    </mat-form-field>
+    @for (user of filteredUsers; track user.id) {
+        <app-user [user]="user" />
+    }
+</div>

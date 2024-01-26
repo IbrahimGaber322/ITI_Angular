@@ -1,0 +1,11 @@
+.my-users-container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+.my-search{
+    width: 100%;
+    max-width: 1200px;
+    margin: 10px 40px;
+}

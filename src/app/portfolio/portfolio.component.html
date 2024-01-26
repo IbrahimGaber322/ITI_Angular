@@ -1,0 +1,56 @@
+<div>
+
+
+    <div [style.display]="active===0? 'block':'none'" class="my-portfolio">
+
+        <h1 class="my-intro">
+            Hello I'm Ibrahim Gaber, welcome to my portfolio 😀
+        </h1>
+
+        <p class="my-about">
+            I'm a code wizard by day and a caffeine-powered dreamer by night. I navigate through the digital realm armed
+            with a
+            keyboard, an unwavering love for problem-solving, and an unhealthy addiction to cat memes.
+        </p>
+        <img src="../../assets/coffee.png" width="500" height="500" />
+    </div>
+
+    <div [style.display]="active===1? 'block':'none'" class="my-portfolio">
+
+        <div class="my-contact">
+            <h1 class="my-intro">contact me</h1>
+            <mat-form-field>
+                <mat-label>Name</mat-label>
+                <input matInput>
+            </mat-form-field>
+            <mat-form-field>
+                <mat-label>Message...</mat-label>
+                <textarea matInput></textarea>
+            </mat-form-field>
+            <mat-form-field>
+                <mat-label>Enter your email</mat-label>
+                <input matInput placeholder="pat@example.com" [formControl]="email" required>
+                @if (email.invalid) {
+                <mat-error>{{getErrorMessage()}}</mat-error>
+                }
+            </mat-form-field>
+
+            <button class="my-submit" mat-button>Submit</button>
+
+
+        </div>
+    </div>
+
+    <div [style.display]="active===2? 'block':'none'" class="my-portfolio">
+        @for (skill of skills; track $index) {
+        <p class="my-about">{{skill.title}}</p>
+        <mat-progress-bar class="my-skill" mode="determinate" [value]="skill.value"></mat-progress-bar>
+        }
+        
+        <a class="my-submit" mat-button href="../../assets/IbrahimGaberCV.pdf" download>
+            Download Cv
+          </a>
+
+    </div>
+
+</div>

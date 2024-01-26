@@ -1,0 +1,19 @@
+<div  class="my-container">
+    <mat-card class="my-list">
+        <mat-card-content class="my-list-content">
+            <h1 class="my-title">To do list </h1>
+
+            <mat-form-field class="my-full-width">
+                <mat-label>Add an item</mat-label>
+                <input (keyup)="addTask($event)" [(ngModel)]="input" type="text" matInput
+                    placeholder="example: Go buy groceries">
+                <mat-icon matSuffix>add</mat-icon>
+            </mat-form-field>
+            @for(task of tasks; track task.text){
+                <app-task (deleteEvent)="remove($event)" (checkBox)="reOrder()" class="my-task" [task]="task" />
+            }
+
+
+        </mat-card-content>
+    </mat-card>
+</div>

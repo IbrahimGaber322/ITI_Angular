@@ -1,0 +1,25 @@
+.my-task-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.my-flex{
+    display: flex;
+    align-items: center;
+}
+.my-button{
+    width: fit-content;
+    margin: 0 5px;
+    padding: 0;
+}
+.my-icon{
+    margin: 0;
+}
+.my-task-name{
+    height: fit-content;
+    width: fit-content;
+    padding: 0;
+    margin: 0;
+    font-weight: 900;
+  
+}

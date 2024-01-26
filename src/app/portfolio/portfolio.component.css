@@ -1,0 +1,42 @@
+.my-portfolio{
+  
+  height: calc(100vh - 94px);
+  background-image: url("../../assets/portfolio-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 30px;
+  padding-left: 30px;
+}   
+
+.my-intro{
+    color: white;
+    font-style: italic;
+    font-weight: 900;   
+     font-size: 2rem;
+}
+
+.my-about{
+    color: white;
+    font-size: 1.2rem;
+    width: 50%;
+    font-weight: 500;
+}
+.my-submit{
+    background-color: blue;
+    color: white;
+}
+
+.my-contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.my-skill{
+    color: white !important;
+    background-color: white !important;
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 10px;
+}

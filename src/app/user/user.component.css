@@ -1,0 +1,12 @@
+.my-card {
+  max-width: 400px;
+  margin: 10px;
+}
+
+.my-header-image {
+  background-size: cover;
+  
+}
+.my-username{
+    font-weight: 900;
+}

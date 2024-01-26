@@ -1,0 +1,13 @@
+<mat-card>
+    <mat-card-content class="my-task-content">
+        <p [style.color]="color" class="my-task-name">{{task.text}}</p>
+        <div class="my-flex">
+            <button (click)="remove()" class="my-button" mat-button><mat-icon class="my-icon">delete</mat-icon></button>
+            <mat-checkbox  (change)="handleCheck(task.done)" class="my-check"
+                [checked]="task.done" color="secondary" />
+            
+        </div>
+
+
+    </mat-card-content>
+</mat-card>
